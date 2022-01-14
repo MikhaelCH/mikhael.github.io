@@ -26,6 +26,25 @@ html{
     background: #555;
 }
 
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:90px;
+	right:23px;
+	background-color:#76c99f;
+	color: white;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  z-index: 99999999;
+}
+
+.my-float{
+	font-size:25px;
+	margin-top:18px;
+}
+
 /* all similar content styling codes */
 section{
     padding: 100px 0;
@@ -276,7 +295,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "Biasa saya melakukan";
+    content: "Melakukan";
 }
 .services .serv-content .card{
     width: calc(47% - 1px);
@@ -313,7 +332,7 @@ section .title::after{
 /* skills section styling */
 
 .skills .title::after{
-    content: "Apa yang saya ketahui";
+    content: "Saya mengetahui";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -456,19 +475,21 @@ section .title::after{
     width: calc(50% - 30px);
 }
 .contact .contact-content .text{
+    text-align: center;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .contact .contact-content .left p{
     text-align: justify;
 }
 .contact .contact-content .left .icons{
+    text-align: center;
     margin: 10px 0;
 }
 .contact .contact-content .row{
     display: flex;
-    height: 65px;
+    height: 60px;
     align-items: center;
 }
 .contact .contact-content .row .info{
@@ -633,7 +654,7 @@ footer span a:hover{
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 }
 

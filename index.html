@@ -14,6 +14,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <a href="https://wa.me/6285668758995" class="float" style="color: white;" target="_blank">
+        <i class="fab fa-whatsapp my-float"></i>
+    </a>
 
 </head>
 
@@ -154,9 +157,10 @@
         <div class="max-width">
             <h2 class="title">Kontak saya</h2>
             <div class="contact-content">
-                <div class="column center">
+                <div class="column">
                     <div class="text">Berkenalan</div>
-                    <p>Silahkan menghubungi saya</p>
+                    <p style="text-align:center">
+                        </pstyle>Silahkan menghubungi saya</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -188,6 +192,30 @@
                         </div>
                     </div>
                 </div>
+                <div class="column right">
+                    <div class="text">Pesan Saya</div>
+                    <p style="text-align:center">
+                        </pstyle>Silahkan Tulis Pesan</p>
+                    <form name='Contact-Form-Mikhael'>
+                        <div class="fields">
+                            <div class="field name">
+                                <input name="Nama" type="text" placeholder="Nama" required>
+                            </div>
+                            <div class="field email">
+                                <input name="Email" type="email" placeholder="Surel" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input name="Subjek" type="text" placeholder="Subjek" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Pesan.." name="Pesan" required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Kirim Pesan</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -198,6 +226,18 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzDSheK5Qt23MrbBuKhFPYc1SLxMMKvDZhuvdts3NhTypg6ZF0OH5duwbW3DPLRV8w2/exec'
+        const form = document.forms['Contact-Form-Mikhael']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 </body>
 
 </html>
