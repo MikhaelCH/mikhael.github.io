@@ -27,6 +27,12 @@ $(document).ready(function () {
         $('html').css("scrollBehavior", "smooth");
     });
 
+    // tilt JS
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 35,
+        speed: 300,
+    });
+
     // toggle menu/navbar script
     $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
@@ -46,6 +52,14 @@ $(document).ready(function () {
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
+    });
+
+    // Fake Loader JS
+    $(document).ready(function () {
+        $.fakeLoader({
+            bgColor: '#000000',
+            spinner: "spinner2"
+        });
     });
 
     // owl carousel script

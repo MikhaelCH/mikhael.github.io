@@ -18,15 +18,22 @@
         <i class="fab fa-whatsapp my-float"></i>
     </a>
 
+    <!-- Light -->
+    <link rel="stylesheet" href="css/mikhael.css">
+
+    <!-- Fake Loader CSS -->
+    <link rel="stylesheet" href="css/fakeLoader.css">
 </head>
 
 <body>
+    <div class="fakeLoader"></div>
+
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Porto<span>folio</span></a></div>
+            <div class="logo"><a href="#">Porto<strong>folio</strong></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Halaman Utama</a></li>
                 <li><a href="#about" class="menu-btn">Tentang</a></li>
@@ -62,7 +69,7 @@
         <div class="max-width">
             <h2 class="title">Tentang Saya</h2>
             <div class="about-content">
-                <div class="column left">
+                <div class="column left" data-tilt>
                     <img src="images/mikhael.png" alt="">
                 </div>
                 <div class="column right">
@@ -114,36 +121,36 @@
                 <div class="column right">
                     <div class="bars">
                         <div class="info">
-                            <span>HTML</span>
-                            <span>85%</span>
+                            <strong>HTML</strong>
+                            <strong>85%</strong>
                         </div>
                         <div class="line html"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>CSS</span>
-                            <span>60%</span>
+                            <strong>CSS</strong>
+                            <strong>60%</strong>
                         </div>
                         <div class="line css"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>JavaScript</span>
-                            <span>60%</span>
+                            <strong>JavaScript</strong>
+                            <strong>60%</strong>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>PHP</span>
-                            <span>85%</span>
+                            <strong>PHP</strong>
+                            <strong>85%</strong>
                         </div>
                         <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>MySQL</span>
-                            <span>70%</span>
+                            <strong>MySQL</strong>
+                            <strong>70%</strong>
                         </div>
                         <div class="line mysql"></div>
                     </div>
@@ -159,8 +166,8 @@
             <div class="contact-content">
                 <div class="column">
                     <div class="text">Berkenalan</div>
-                     <p style="text-align:center">
-                        </pstyle>Silahkan Menghubungi Saya</p>
+                    <p style="text-align:center">
+                        </pstyle>Silahkan menghubungi saya</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -221,11 +228,16 @@
     </section>
     <!-- footer section start -->
     <footer>
-        <span>Dibuat oleh <a href="https://www.instagram.com/mikhael3105/">Mikhael CH</a> | <span
-                class="far fa-copyright"></span> 2021.</span>
+        <strong>Dibuat oleh <a href="https://www.instagram.com/mikhael3105/">Mikhael CH</a> | <strong>
+                <i class="far fa-copyright"></i></strong> 2021.</strong>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Vanilla Tilt js -->
+    <script src="js/vanilla-tilt.min.js"></script>
+    <!-- FakeLoader js -->
+    <script src="js/fakeLoader.js"></script>
 
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzDSheK5Qt23MrbBuKhFPYc1SLxMMKvDZhuvdts3NhTypg6ZF0OH5duwbW3DPLRV8w2/exec'

@@ -1,0 +1,12 @@
+
+  span{
+    color: #00d026;
+    font-size: 30px;
+
+    animation: text 5s ease-in-out infinite;
+  }
+  @keyframes text {
+    0%{
+      color: rgb(10, 0, 255);
+    }
+  }
