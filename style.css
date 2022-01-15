@@ -119,11 +119,11 @@ section .title::after{
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a strong{
+.navbar .logo a span{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a strong{
+.navbar.sticky .logo a span{
     color: #fff;
 }
 .navbar .menu li{
@@ -218,7 +218,7 @@ section .title::after{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+.home .home-content .text-3 strong{
     font-weight: 600;
     font-size: 40px;
 }
@@ -260,7 +260,7 @@ section .title::after{
     font-weight: 600;
     margin-bottom: 10px;
 }
-.about .about-content .right .text span{
+.about .about-content .right .text strong{
     font-weight: 600;
     font-size: 25px;
 }
@@ -371,7 +371,7 @@ section .title::after{
     align-items: center;
     justify-content: space-between;
 }
-.skills .skills-content .right strong{
+.skills .skills-content .right span{
     font-weight: 500;
     font-size: 18px;
 }
@@ -572,11 +572,11 @@ footer{
     color: #fff;
     text-align: center;
 }
-footer strong a{
+footer span a{
     color: crimson;
     text-decoration: none;
 }
-footer strong a:hover{
+footer span a:hover{
     text-decoration: underline;
 }
 
