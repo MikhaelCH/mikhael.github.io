@@ -6,7 +6,8 @@
     animation: text 5s ease-in-out infinite;
   }
   @keyframes text {
-    0%{
+    50%{
       color: rgb(10, 0, 255);
     }
   }
+
