@@ -58,7 +58,7 @@ $(document).ready(function () {
     $(document).ready(function () {
         $.fakeLoader({
             bgColor: '#000000',
-            spinner: "spinner2"
+            spinner: "spinner1"
         });
     });
 
